@@ -1,0 +1,6 @@
+{
+  "name": "Caffeine Cove",
+  "description": "Warm and cozy artisanal café serving specialty coffees, teas, handcrafted desserts, and snacks with an interactive menu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

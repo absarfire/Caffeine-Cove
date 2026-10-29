@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+  }
+  /* Coverage for the black tiger sugar stripe:
+     The stripe runs from x: 380 to 520, y: 240 to 560
+  */
+  .cove-brand-seal {
+    position: absolute;
+    top: 250px;
+    left: 360px;
+    width: 175px;
+    height: 230px;
+    background: linear-gradient(145deg, #2D1A10, #180D07);
+    border-radius: 18px;
+    border: 2px solid #DDA15E;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6), inset 0 0 12px rgba(221,161,94,0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 10px;
+    transform: rotate(3deg); /* Matches the angle of the cup! */
+  }
+  .seal-circle {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: 1.5px solid #DDA15E;
+    background: #3D2817;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  }
+  .brand-title {
+    font-family: serif;
+    font-weight: 800;
+    font-size: 14.5px;
+    color: #FDFBF7;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 4px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  }
+  .brand-sub {
+    font-size: 8.5px;
+    color: #DDA15E;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+  }
+  .brand-divider {
+    width: 75%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #DDA15E, transparent);
+    margin: 4px 0;
+  }
+  .signature-text {
+    font-size: 8px;
+    color: #E6D7C3;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .location-pill {
+    background: #DDA15E;
+    color: #2D1A10;
+    font-size: 7.5px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 2px 7px;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <img class="bg" src="file:///app/applet/public/brown-sugar-boba-tea.jpg" />
+  
+  <div class="cove-brand-seal">
+    <div class="seal-circle">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#DDA15E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+        <line x1="6" y1="1" x2="6" y2="4"></line>
+        <line x1="10" y1="1" x2="10" y2="4"></line>
+        <line x1="14" y1="1" x2="14" y2="4"></line>
+      </svg>
+    </div>
+    <div>
+      <div class="brand-title">Caffeine Cove</div>
+      <div class="brand-sub">Artisanal Café</div>
+    </div>
+    <div class="brand-divider"></div>
+    <div class="signature-text">Signature Okinawa<br/>Brown Sugar Boba</div>
+    <div class="location-pill">Bandra West</div>
+  </div>
+</body>
+</html>
